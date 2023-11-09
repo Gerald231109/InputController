@@ -1,0 +1,59 @@
+*,
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+.test-buttons {
+    display: grid;
+    grid-gap: 1rem;
+}
+
+.target {
+    grid-auto-flow: column;
+    display: grid;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+}
+
+.target__square {
+    height: 10rem;
+    width: 10rem;
+    background-color: darkred;
+    cursor: pointer;
+}
+
+.target__triangle {
+    height: 10rem;
+    width: 10rem;
+    background-color: darkgreen;
+    cursor: pointer;
+    clip-path: polygon(50% 0, 100% 100%, 0 100%);
+}
+
+
+
+
+
+
+
+
+

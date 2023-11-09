@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="test-buttons">
+        <div class="bindActions">
+            <input type="text" class="bind__keysList" required placeholder="KeyCodes через пробел">
+            <input type="text" class="bind__actionName" required placeholder="Точное название активности">
+            <button class="bindActionsBtn">bindActions</button>
+        </div>
+        
+        <div class="enableAction">
+            <input type="text" class="enableAction__input" required placeholder="Точное название активности">
+            <button class="enableAction__btn">enableAction</button>
+        </div>
+
+        <div class="disableAction">
+            <input type="text" class="disableAction__input" required placeholder="Точное название активности">
+            <button class="disableAction__btn">disableAction</button>
+        </div>
+
+        <div class="attach">
+            <input type="checkbox" class="attach__checkbox" id="dontEnable">
+            <label for="dontEnable">dontEnable</label>
+        </div>
+
+        <div class="isKeyPressed">
+            <input type="number" class="iskeyPressed__input" required placeholder="KeyCode">
+            <button class="isKeyPressed__btn">isKeyPressed</button>
+        </div>
+    </section>
+    <section class="target">
+            <div class="target__square"></div>
+            <div class="target__triangle"></div>
+        <button class="detach">detach</button>
+    </section>
+
+    <script defer src="input-controller.js"></script>
+    <script defer src="input-controller-test.js"></script>
+</body>
+</html>
